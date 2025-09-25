@@ -1,0 +1,161 @@
+.header {
+    position: fixed;
+    display: flex;
+    width: 80%;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(14, 14, 27, 0.79);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    border-radius: 30px;
+    padding: 5px;
+    z-index: 1000;
+    overflow: visible;
+}
+
+.header-glow {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 100px;
+    background: radial-gradient(circle, rgba(128, 0, 255, 0.4), transparent 70%);
+    filter: blur(100px);
+    z-index: 500;
+    /* أقل من الهيدر بس أعلى من الخلفية */
+}
+
+.header a {
+    color: #8d8d8d;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all .4s ease;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+.header a:hover {
+    color: #8756f3;
+}
+
+.links {
+    display: flex;
+    font-size: 13px;
+
+}
+
+span {
+    color: #8756f3;
+}
+
+.name {
+    font-size: 27px;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.linkss {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.linkss a {
+    border: 2px solid transparent;
+    padding: 5px;
+}
+
+.linkss a:hover {
+    background: #8856f325;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.links-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.links-glow {
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(128, 0, 255, 0.8), transparent 70%);
+    border-radius: 50%;
+    filter: blur(60px);
+    z-index: -1;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.links-container.open .links-glow {
+    opacity: 1;
+}
+
+.links-container.open {
+    opacity: 1;
+}
+
+.active {
+    background: #8856f325;
+    color: #8756f3 !important;
+    padding: 10px;
+    border-radius: 20px !important;
+    font-weight: 700 !important;
+}
+
+.menuHover {
+    transition: all .4s ease;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.menuHover:hover {
+    color: #8756f3 !important;
+    background: #8856f325;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .links-container {
+        display: none;
+        flex-direction: column;
+    }
+
+    .header {
+        width: fit-content;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .links-container.open {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header {
+        width: 90%;
+    }
+}

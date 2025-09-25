@@ -1,0 +1,54 @@
+.contactMe {
+    background: linear-gradient(#171928, #0D1117);
+    margin-top: 30px;
+}
+
+.contact {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.box {
+    background: #0f131986;
+    padding: 23px;
+    border: 1px solid #8d8d8d60;
+    border-radius: 8px;
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+}
+
+.box:hover {
+    background: #0f131986;
+    border: 1px solid #8756f3;
+
+}
+
+.iconsss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.iconsss a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #8d8d8d79;
+    border-radius: 50%;
+    padding: 15px;
+    transition: all .4s ease;
+}
+
+.iconsss a:hover {
+    background: #8756f3;
+    color: #0D1117;
+}

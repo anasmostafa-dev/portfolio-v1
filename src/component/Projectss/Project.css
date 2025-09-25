@@ -1,0 +1,33 @@
+.containerProjects {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #cccccc7a;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.iconss {
+    margin-right: 10px;
+    padding: 4px 13px;
+    border-radius: 30px;
+    color: #ffffff;
+    background: #82828261;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+    border: 1px solid #8d8d8d34;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
