@@ -64,7 +64,7 @@ export default function Contact() {
             Phone
           </p>
           <a
-            href="tel:+201032503498"
+            href="tel:+201032504598"
             style={{ fontSize: "16px", textDecoration: "none", color: "#fff" }}
           >
             +201032504598
@@ -88,14 +88,14 @@ export default function Contact() {
         >
           <SiInstagram color="#fff" size={14} />
         </a>
-        <a href="https://wa.me/201032503498" target="_blank">
+        <a href="https://wa.me/201032504598" target="_blank">
           <SiWhatsapp color="#fff" size={14} />
         </a>
       </div>
       <Box display="flex" justifyContent="center">
         <Button
           sx={{ background: "teal", padding: "15px 20px" }}
-          href="https://wa.me/201032503498"
+          href="https://wa.me/201032504598"
           variant="contained"
         >
           Start Conversation
